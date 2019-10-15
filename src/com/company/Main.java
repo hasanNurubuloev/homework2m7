@@ -51,7 +51,7 @@ public class Main {
         System.out.println("________________________");
 
 
-        ArrayList<String> c = a ;
+        ArrayList<String> c = new ArrayList<>();
         iterA = a.iterator();
         iterB = b.iterator();
         Collections.reverse(b);
@@ -59,9 +59,12 @@ public class Main {
         while (iterA.hasNext()) {
             String s = iterA.next();
             String v = iterB.next();
+            c.add(s);
+            c.add(v);
             System.out.println(s);
             System.out.println(v);
         }
+
         Collections.sort(c, new Comparator<String>() {
             @Override
             public int compare(String s, String t1) {
