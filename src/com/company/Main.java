@@ -1,9 +1,5 @@
 package com.company;
-
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.*;
-
 public class Main {
 //    В задании нельзя использовать циклы for и for each. Только while и Iterator
 //    Написать приложение которое бы считывало сначала 5 строк которые вводит юзер и сохраняла бы их в Список А.
@@ -58,6 +54,7 @@ public class Main {
 
         while (iterA.hasNext()) {
             String s = iterA.next();
+
             String v = iterB.next();
             c.add(s);
             c.add(v);
